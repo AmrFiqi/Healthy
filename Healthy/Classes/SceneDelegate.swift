@@ -23,9 +23,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         viewController.view.backgroundColor = .systemCyan
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = viewController
+        window.rootViewController = LaunchViewController()
         window.makeKeyAndVisible()
         self.window = window
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
